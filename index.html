@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres florcitas, mi amor?</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #fffdd0, #ffe97f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #ffbf00;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #ffcc00;
+            margin-bottom: 2rem;
+            text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            background-color: #FFB347;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background-color: #FF8008;
+            transform: scale(1.05);
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .flower {
+            margin-bottom: 30px;
+        }
+
+        .flower img {
+            width: 300px;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>¿Quieres florcitas, mi amor?</h1>
+    <p>Porque tú eres la luz de mi primavera eterna.</p>
+    <div class="flower">
+        <!-- Aquí va el GIF con el enlace directo -->
+        <img src="https://i.pinimg.com/originals/8f/48/9d/8f489dcebc5e25d102dfde2114328ff1.gif" alt="Flor animada">
+    </div>
+    <button onclick="abrirRosas()">¡Sí, quiero!</button>
+
+    <audio id="musica" src="musica.mp3" autoplay loop></audio>
+
+    <script>
+        function abrirRosas() {
+            window.open('rosas.html', '_blank');
+            document.getElementById('musica').play();
+        }
+    </script>
+</body>
+</html>
